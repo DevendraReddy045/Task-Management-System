@@ -8,7 +8,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = "http://localhost:5173") // ✅ Vite frontend
+@CrossOrigin(origins = "*") // ✅ Vite frontend
 public class AuthController {
 
     private final UserService userService;
